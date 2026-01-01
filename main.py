@@ -2,12 +2,16 @@
 Hovedprogram som skal koble sammen alle de andre programmene.
 Kaller på funksjoner fra simulering og visualisering.
 Inneholder 'test' funksjoner for å manuelt sjekke om visse funksjoner funker.
-Test funksjonene kan brukes for å teste programet ut, se hva som kan gjøres
+Test funksjonene kan brukes for å teste programet ut, se hva som kan gjøres.
+For å teste ut mest mulig så må man skrive litt selv.
 """
 from simulering import *
 from visualisering import *
 
 def test_snap():
+    """
+    Tester snapshot funksjonen. Kan brukes til å genere ett bilde for en passende matrise.
+    """
     v0 = 1e10
     nH = 100
     u0, X, Y = initialCondition(nH)
@@ -27,6 +31,10 @@ def test_v():
     visualizeV(V,X,Y)
 
 def test_anim():
+    """
+    Gjerne uncomment de andre metodene hvis man har lyst til å teste dem
+    Les gjerne dokumentasjonen hvis du har lyst til å vite hva variablene er
+    """
     v0 = 1e6
     nH = 100
     u0, X, Y = initialCondition(nH)
