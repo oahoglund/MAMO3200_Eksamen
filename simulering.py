@@ -1,3 +1,6 @@
+"""
+Program som inneholder alle funksjoner for å gjøre alle simuleringene
+"""
 import numpy as np
 from scipy.sparse import diags, eye, kron, csr_matrix
 from scipy.sparse.linalg import factorized

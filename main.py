@@ -1,3 +1,9 @@
+"""
+Hovedprogram som skal koble sammen alle de andre programmene.
+Kaller på funksjoner fra simulering og visualisering.
+Inneholder 'test' funksjoner for å manuelt sjekke om visse funksjoner funker.
+Test funksjonene kan brukes for å teste programet ut, se hva som kan gjøres
+"""
 from simulering import *
 from visualisering import *
 

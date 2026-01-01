@@ -1,3 +1,7 @@
+"""
+Program som inneholder alle funksjonene for visualisering
+"""
+
 from mayavi import mlab
 import matplotlib.pyplot as plt
 import numpy as np
