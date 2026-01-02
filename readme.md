@@ -14,9 +14,6 @@ As the course was in Norwegian, the code and presentation is written in Norwegia
 - **Initial condition**: Gaussian wave packet with momentum in the x-direction  
 - **Potential**: High potential barrier forming a **double slit**  
 - **Boundary conditions**: Dirichlet boundary conditions  
-  $$
-  \psi = 0 \quad \text{on the boundary}
-  $$
 
 The Hamiltonian is discretized using finite differences, resulting in a sparse matrix representation.
 
@@ -38,15 +35,11 @@ These methods are analyzed with respect to **stability** and **probability conse
 
 The Crank–Nicolson scheme is unconditionally stable and serves as a reference solution.
 
-The total probability  
-$$
-\int |\psi(x,y,t)|^2 \, dx \, dy
-$$
-is monitored over time to assess numerical accuracy and stability.
+The total probability is monitored over time to assess numerical accuracy and stability.
 
 ---
 
-## 🧑‍💻 Code Structure
+## Code Structure
 
 ```
 .
@@ -93,7 +86,7 @@ The project supports:
 
 ---
 
-## 🛠 Requirements
+## Requirements
 
 Main dependencies:
 - `numpy`
@@ -136,9 +129,3 @@ This project demonstrates:
 - Modular code design
 - Advanced visualization techniques
 - Reproducible computational workflows
-
----
-
-## 📌 Notes
-
-This project was developed as part of an exam, but the codebase is written with clarity, modularity, and reproducibility in mind. It is intended both as a scientific simulation and as a demonstration of numerical and computational physics skills.
